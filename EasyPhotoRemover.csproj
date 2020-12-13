@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>EasyPhotoRemover</RootNamespace>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Authors>Alex Logvin</Authors>
+    <RepositoryUrl>https://github.com/alexlogvin/EasyPhotoRemover</RepositoryUrl>
+    <RepositoryType>Github</RepositoryType>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <StartupObject>EasyPhotoRemover.Program</StartupObject>
+  </PropertyGroup>
+
+</Project>

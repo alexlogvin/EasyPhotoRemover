@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace Easy_Photo_Remover
+namespace EasyPhotoRemover
 {
     public partial class MainForm : Form
     {
@@ -58,7 +58,7 @@ namespace Easy_Photo_Remover
         }
         private int _imagesToDeleteCount = 0;
 
-        private readonly List<string> AllowedExtentions = new List<string> { ".jpg", ".png", ".jpeg" };
+        private readonly List<string> AllowedExtentions = new List<string> { ".jpg", ".png", ".jpeg", ".gif" };
 
         public MainForm()
         {

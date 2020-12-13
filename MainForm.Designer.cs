@@ -1,5 +1,5 @@
 ﻿
-namespace Easy_Photo_Remover
+namespace EasyPhotoRemover
 {
     partial class MainForm
     {
@@ -123,7 +123,7 @@ namespace Easy_Photo_Remover
             this.Controls.Add(this.imageViewer);
             this.KeyPreview = true;
             this.Name = "MainForm";
-            this.Text = "Form1";
+            this.Text = "Easy Photo Remover";
             ((System.ComponentModel.ISupportInitialize)(this.imageViewer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
