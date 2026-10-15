@@ -17,6 +17,7 @@ namespace EasyPhotoRemover
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Application.SetDefaultVisualStylesMode(VisualStylesMode.Latest);
             Application.Run(new MainForm());
         }
     }

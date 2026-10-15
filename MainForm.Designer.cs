@@ -29,104 +29,112 @@ namespace EasyPhotoRemover
         /// </summary>
         private void InitializeComponent()
         {
-            this.imageViewer = new System.Windows.Forms.PictureBox();
-            this.btnFolderChooser = new System.Windows.Forms.Button();
-            this.lblChoosenFolder = new System.Windows.Forms.Label();
-            this.folderChooser = new System.Windows.Forms.FolderBrowserDialog();
-            this.lblTotalImages = new System.Windows.Forms.Label();
-            this.lblImagesToDelete = new System.Windows.Forms.Label();
-            this.lblAction = new System.Windows.Forms.Label();
-            this.btnDeleteImages = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.imageViewer)).BeginInit();
-            this.SuspendLayout();
+            imageViewer = new System.Windows.Forms.PictureBox();
+            btnFolderChooser = new System.Windows.Forms.Button();
+            lblChoosenFolder = new System.Windows.Forms.Label();
+            folderChooser = new System.Windows.Forms.FolderBrowserDialog();
+            lblTotalImages = new System.Windows.Forms.Label();
+            lblImagesToDelete = new System.Windows.Forms.Label();
+            lblAction = new System.Windows.Forms.Label();
+            btnDeleteImages = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)imageViewer).BeginInit();
+            SuspendLayout();
             // 
             // imageViewer
             // 
-            this.imageViewer.Location = new System.Drawing.Point(12, 52);
-            this.imageViewer.Name = "imageViewer";
-            this.imageViewer.Size = new System.Drawing.Size(1234, 1139);
-            this.imageViewer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.imageViewer.TabIndex = 0;
-            this.imageViewer.TabStop = false;
+            imageViewer.Location = new System.Drawing.Point(8, 41);
+            imageViewer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            imageViewer.Name = "imageViewer";
+            imageViewer.Size = new System.Drawing.Size(864, 673);
+            imageViewer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            imageViewer.TabIndex = 0;
+            imageViewer.TabStop = false;
             // 
             // btnFolderChooser
             // 
-            this.btnFolderChooser.Location = new System.Drawing.Point(12, 12);
-            this.btnFolderChooser.Name = "btnFolderChooser";
-            this.btnFolderChooser.Size = new System.Drawing.Size(154, 34);
-            this.btnFolderChooser.TabIndex = 1;
-            this.btnFolderChooser.Text = "Chose folder...";
-            this.btnFolderChooser.UseVisualStyleBackColor = true;
-            this.btnFolderChooser.Click += new System.EventHandler(this.btnFolderChooser_Click);
+            btnFolderChooser.Location = new System.Drawing.Point(8, 7);
+            btnFolderChooser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            btnFolderChooser.Name = "btnFolderChooser";
+            btnFolderChooser.Size = new System.Drawing.Size(108, 31);
+            btnFolderChooser.TabIndex = 1;
+            btnFolderChooser.Text = "Chose folder...";
+            btnFolderChooser.UseVisualStyleBackColor = true;
+            btnFolderChooser.Click += btnFolderChooser_Click;
             // 
             // lblChoosenFolder
             // 
-            this.lblChoosenFolder.AutoSize = true;
-            this.lblChoosenFolder.Location = new System.Drawing.Point(172, 17);
-            this.lblChoosenFolder.Name = "lblChoosenFolder";
-            this.lblChoosenFolder.Size = new System.Drawing.Size(166, 25);
-            this.lblChoosenFolder.TabIndex = 2;
-            this.lblChoosenFolder.Text = "Folder not choosen";
+            lblChoosenFolder.AutoSize = true;
+            lblChoosenFolder.Location = new System.Drawing.Point(120, 15);
+            lblChoosenFolder.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            lblChoosenFolder.Name = "lblChoosenFolder";
+            lblChoosenFolder.Size = new System.Drawing.Size(109, 15);
+            lblChoosenFolder.TabIndex = 2;
+            lblChoosenFolder.Text = "Folder not choosen";
             // 
             // lblTotalImages
             // 
-            this.lblTotalImages.AutoSize = true;
-            this.lblTotalImages.Location = new System.Drawing.Point(12, 1194);
-            this.lblTotalImages.Name = "lblTotalImages";
-            this.lblTotalImages.Size = new System.Drawing.Size(130, 25);
-            this.lblTotalImages.TabIndex = 3;
-            this.lblTotalImages.Text = "Total images: 0";
+            lblTotalImages.AutoSize = true;
+            lblTotalImages.Location = new System.Drawing.Point(8, 716);
+            lblTotalImages.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            lblTotalImages.Name = "lblTotalImages";
+            lblTotalImages.Size = new System.Drawing.Size(86, 15);
+            lblTotalImages.TabIndex = 3;
+            lblTotalImages.Text = "Total images: 0";
             // 
             // lblImagesToDelete
             // 
-            this.lblImagesToDelete.AutoSize = true;
-            this.lblImagesToDelete.Location = new System.Drawing.Point(13, 1223);
-            this.lblImagesToDelete.Name = "lblImagesToDelete";
-            this.lblImagesToDelete.Size = new System.Drawing.Size(164, 25);
-            this.lblImagesToDelete.TabIndex = 4;
-            this.lblImagesToDelete.Text = "Images to delete: 0";
+            lblImagesToDelete.AutoSize = true;
+            lblImagesToDelete.Location = new System.Drawing.Point(9, 734);
+            lblImagesToDelete.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            lblImagesToDelete.Name = "lblImagesToDelete";
+            lblImagesToDelete.Size = new System.Drawing.Size(106, 15);
+            lblImagesToDelete.TabIndex = 4;
+            lblImagesToDelete.Text = "Images to delete: 0";
             // 
             // lblAction
             // 
-            this.lblAction.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblAction.AutoSize = true;
-            this.lblAction.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblAction.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblAction.Location = new System.Drawing.Point(1118, 69);
-            this.lblAction.Name = "lblAction";
-            this.lblAction.Size = new System.Drawing.Size(112, 45);
-            this.lblAction.TabIndex = 5;
-            this.lblAction.Text = "Action";
-            this.lblAction.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            lblAction.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            lblAction.AutoSize = true;
+            lblAction.Font = new System.Drawing.Font("Segoe UI", 16F);
+            lblAction.ForeColor = System.Drawing.SystemColors.Control;
+            lblAction.Location = new System.Drawing.Point(783, 41);
+            lblAction.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            lblAction.Name = "lblAction";
+            lblAction.Size = new System.Drawing.Size(74, 30);
+            lblAction.TabIndex = 5;
+            lblAction.Text = "Action";
+            lblAction.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // btnDeleteImages
             // 
-            this.btnDeleteImages.Location = new System.Drawing.Point(1017, 1197);
-            this.btnDeleteImages.Name = "btnDeleteImages";
-            this.btnDeleteImages.Size = new System.Drawing.Size(229, 52);
-            this.btnDeleteImages.TabIndex = 6;
-            this.btnDeleteImages.Text = "Delete marked images";
-            this.btnDeleteImages.UseVisualStyleBackColor = true;
-            this.btnDeleteImages.Click += new System.EventHandler(this.btnDeleteImages_Click);
+            btnDeleteImages.Location = new System.Drawing.Point(712, 718);
+            btnDeleteImages.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            btnDeleteImages.Name = "btnDeleteImages";
+            btnDeleteImages.Size = new System.Drawing.Size(160, 31);
+            btnDeleteImages.TabIndex = 6;
+            btnDeleteImages.Text = "Delete marked images";
+            btnDeleteImages.UseVisualStyleBackColor = true;
+            btnDeleteImages.Click += btnDeleteImages_Click;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1258, 1261);
-            this.Controls.Add(this.btnDeleteImages);
-            this.Controls.Add(this.lblAction);
-            this.Controls.Add(this.lblImagesToDelete);
-            this.Controls.Add(this.lblTotalImages);
-            this.Controls.Add(this.lblChoosenFolder);
-            this.Controls.Add(this.btnFolderChooser);
-            this.Controls.Add(this.imageViewer);
-            this.KeyPreview = true;
-            this.Name = "MainForm";
-            this.Text = "Easy Photo Remover";
-            ((System.ComponentModel.ISupportInitialize)(this.imageViewer)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(881, 757);
+            Controls.Add(btnDeleteImages);
+            Controls.Add(lblAction);
+            Controls.Add(lblImagesToDelete);
+            Controls.Add(lblTotalImages);
+            Controls.Add(lblChoosenFolder);
+            Controls.Add(btnFolderChooser);
+            Controls.Add(imageViewer);
+            KeyPreview = true;
+            Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            Name = "MainForm";
+            Text = "Easy Photo Remover";
+            ((System.ComponentModel.ISupportInitialize)imageViewer).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 
